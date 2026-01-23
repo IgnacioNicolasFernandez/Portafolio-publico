@@ -19,7 +19,7 @@ const Experience = () => {
   ];
 
   return (
-    <section id="experience" className="py-20 relative transition-colors duration-300">
+    <section id="experience" className="py-24 w-full relative transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-12 flex items-center gap-3">
           <Briefcase className="text-primary-500 dark:text-primary-400" /> Experiencia

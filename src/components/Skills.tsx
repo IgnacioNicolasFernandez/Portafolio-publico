@@ -8,7 +8,7 @@ const Skills = () => {
   };
 
   return (
-    <section id="skills" className="py-20 transition-colors duration-300">
+    <section id="skills" className="py-24 w-full relative transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-12 flex items-center gap-3">
           <Cpu className="text-primary-500 dark:text-primary-400" /> Tecnologías

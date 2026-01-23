@@ -6,7 +6,7 @@ interface Props {
   width?: "fit-content" | "100%";
 }
 
-export const RevealOnScroll = ({ children, width = "fit-content" }: Props) => {
+export const RevealOnScroll = ({ children }: Props) => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-75px" });
   const mainControls = useAnimation();
@@ -18,7 +18,7 @@ export const RevealOnScroll = ({ children, width = "fit-content" }: Props) => {
   }, [isInView, mainControls]);
 
   return (
-    <div ref={ref} style={{ position: "relative", width, overflow: "hidden" }}>
+    <div ref={ref} className="w-full relative">
       <motion.div
         variants={{
           hidden: { opacity: 0, y: 75 },
@@ -27,6 +27,7 @@ export const RevealOnScroll = ({ children, width = "fit-content" }: Props) => {
         initial="hidden"
         animate={mainControls}
         transition={{ duration: 0.5, delay: 0.25 }}
+        className="w-full"
       >
         {children}
       </motion.div>
