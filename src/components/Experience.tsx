@@ -19,9 +19,9 @@ const Experience = () => {
   ];
 
   return (
-    <section id="experience" className="py-24 w-full relative transition-colors duration-300">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-12 flex items-center gap-3">
+    <section id="experience" className="min-h-screen flex flex-col items-center justify-center py-20 px-4 w-full relative transition-colors duration-300">
+      <div className="w-full max-w-6xl text-center">
+        <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-12 flex items-center justify-center gap-3">
           <Briefcase className="text-primary-500 dark:text-primary-400" /> Experiencia
         </h2>
 

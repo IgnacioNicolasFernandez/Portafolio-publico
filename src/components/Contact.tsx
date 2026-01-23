@@ -10,7 +10,12 @@ const Contact = () => {
         </p>
         
         <div className="flex justify-center gap-6 mb-12">
-          <a href="mailto:inf26012004@gmail.com" className="flex items-center gap-2 text-slate-900 dark:text-white hover:text-primary-600 dark:hover:text-primary-400 transition-colors text-lg font-medium">
+          <a 
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=inf26012004@gmail.com" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="flex items-center gap-2 text-slate-900 dark:text-white hover:text-primary-600 dark:hover:text-primary-400 transition-colors text-lg font-medium"
+          >
             <Mail /> inf26012004@gmail.com
           </a>
         </div>
