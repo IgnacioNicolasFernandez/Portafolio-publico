@@ -3,7 +3,7 @@ import { Briefcase, Calendar } from 'lucide-react';
 const Experience = () => {
   const experiences = [
     {
-      title: "Instructor de Impresión 3D",
+      title: "Profesor de Impresión 3D",
       company: "PlanificarSEH / UTN",
       period: "Actualidad",
       description: "Digitalización de contenidos en Moodle y capacitación técnica especializada.",

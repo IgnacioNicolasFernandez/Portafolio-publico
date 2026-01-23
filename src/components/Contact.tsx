@@ -6,7 +6,7 @@ const Contact = () => {
       <div className="max-w-3xl mx-auto px-4 text-center">
         <h2 className="text-3xl font-bold text-white mb-6">¿Trabajamos juntos?</h2>
         <p className="text-slate-400 mb-8 text-lg">
-          Estoy disponible para nuevas oportunidades. Si buscas un desarrollador comprometido con la calidad y el trabajo en equipo, hablemos.
+          Estoy disponible para nuevas oportunidades. Si buscas un desarrollador comprometido con la calidad, manejo de buenas practicas en codigo, presentaciones de avances y trabajo en equipo, hablemos.
         </p>
         
         <div className="flex justify-center gap-6 mb-12">

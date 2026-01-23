@@ -16,7 +16,7 @@ const About = () => {
           </p>
           <p className="text-slate-300 text-lg leading-relaxed">
             No solo escribo código; también me apasiona compartir conocimiento, como lo demuestro en mi rol actual 
-            como Instructor de Impresión 3D, y disfruto trabajando en entornos ágiles donde la colaboración es clave.
+            como Profesor de Impresión 3D, y disfruto trabajando en entornos ágiles donde la colaboración es clave.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mt-8">
