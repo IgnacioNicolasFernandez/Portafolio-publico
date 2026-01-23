@@ -12,7 +12,7 @@ const Hero = () => {
           className="order-2 lg:order-1 flex flex-col items-center lg:items-start text-center lg:text-left"
         >
           <span className="text-primary-600 dark:text-primary-400 font-semibold tracking-wider uppercase text-lg md:text-base">Hola, soy</span>
-          <h1 className="text-6xl md:text-7xl font-bold text-slate-900 dark:text-white mt-4 mb-8 leading-tight">
+          <h1 className="text-5xl md:text-7xl font-bold text-slate-900 dark:text-white mt-4 mb-8 leading-tight">
             Ignacio Nicolás <br />
             <span className="bg-gradient-to-r from-primary-600 to-blue-600 dark:from-primary-400 dark:to-blue-600 text-transparent bg-clip-text">
               Fernández

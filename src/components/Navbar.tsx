@@ -56,7 +56,7 @@ const Navbar = () => {
               alt="Logo Ignacio Dev" 
               className="h-10 w-10" 
             />
-            <span className="text-3xl md:text-xl font-bold text-slate-900 dark:text-white transition-colors">
+            <span className="text-2xl md:text-xl font-bold text-slate-900 dark:text-white transition-colors">
               Ignacio.dev
             </span>
           </div>
@@ -102,7 +102,7 @@ const Navbar = () => {
               className="text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white p-3 md:p-2"
               aria-label="Menu Principal"
             >
-              {isOpen ? <X size={32} /> : <Menu size={32} />}
+              {isOpen ? <X size={30} /> : <Menu size={30} />}
             </button>
           </div>
         </div>

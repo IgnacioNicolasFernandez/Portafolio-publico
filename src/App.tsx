@@ -9,7 +9,7 @@ import { RevealOnScroll } from './components/RevealOnScroll';
 
 function App() {
   return (
-    <div className="bg-slate-50 dark:bg-slate-900 min-h-screen text-slate-900 dark:text-slate-200 selection:bg-primary-500 selection:text-white transition-colors duration-300">
+    <div className="bg-slate-50 dark:bg-slate-900 min-h-screen text-slate-900 dark:text-slate-200 selection:bg-primary-500 selection:text-white transition-colors duration-300 overflow-x-hidden">
       <Navbar />
       <main className="w-full">
         <Hero />
