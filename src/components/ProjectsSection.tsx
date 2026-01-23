@@ -81,23 +81,23 @@ const ProjectsSection = () => {
       case 'JavaScript': return 'bg-yellow-400 text-slate-900';
       case 'HTML': return 'bg-orange-600 text-white';
       case 'CSS': return 'bg-blue-500 text-white';
-      default: return 'bg-slate-700 text-slate-300';
+      default: return 'bg-slate-200 text-slate-700 dark:bg-slate-700 dark:text-slate-300';
     }
   };
 
   return (
-    <section id="projects" className="py-20 bg-slate-850 relative">
+    <section id="projects" className="py-20 bg-slate-50 dark:bg-slate-850 relative transition-colors duration-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <h2 className="text-3xl font-bold text-white mb-12 flex items-center gap-3">
-          <Layers className="text-primary-400" /> Proyectos Destacados
+        <h2 className="text-3xl font-bold text-slate-900 dark:text-white mb-12 flex items-center gap-3">
+          <Layers className="text-primary-500 dark:text-primary-400" /> Proyectos Destacados
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
-            <div key={index} className="group bg-slate-900 rounded-xl overflow-hidden border border-slate-800 hover:border-primary-500/50 transition-all hover:shadow-2xl hover:shadow-primary-500/10 flex flex-col">
+            <div key={index} className="group bg-white dark:bg-slate-900 rounded-xl overflow-hidden border border-slate-200 dark:border-slate-800 hover:border-primary-500/50 transition-all hover:shadow-2xl hover:shadow-primary-500/10 flex flex-col">
               
               {/* Imagen del Proyecto */}
-              <div className="h-48 w-full overflow-hidden relative border-b border-slate-800 cursor-pointer" onClick={() => setSelectedProject(project)}>
+              <div className="h-48 w-full overflow-hidden relative border-b border-slate-200 dark:border-slate-800 cursor-pointer" onClick={() => setSelectedProject(project)}>
                 {project.image ? (
                   <img 
                     src={project.image} 
@@ -107,7 +107,7 @@ const ProjectsSection = () => {
                   />
                 ) : null}
                 <div className={`hidden absolute inset-0 w-full h-full flex items-center justify-center ${project.imagePlaceholder} group-hover:scale-105 transition-transform duration-500`}>
-                    <Layers className="text-white/50 w-12 h-12" />
+                    <Layers className="text-slate-400 dark:text-white/50 w-12 h-12" />
                 </div>
                 <div className="absolute top-4 right-4 bg-primary-600 text-white text-[10px] font-bold px-2 py-1 rounded uppercase tracking-wider shadow-lg">
                   {project.category}
@@ -115,8 +115,8 @@ const ProjectsSection = () => {
               </div>
               
               <div className="p-6 flex flex-col flex-grow">
-                <h3 className="text-xl font-bold text-white mb-2">{project.title}</h3>
-                <p className="text-slate-400 text-sm mb-4 line-clamp-3">{project.description}</p>
+                <h3 className="text-xl font-bold text-slate-900 dark:text-white mb-2">{project.title}</h3>
+                <p className="text-slate-600 dark:text-slate-400 text-sm mb-4 line-clamp-3">{project.description}</p>
                 
                 <div className="mt-auto">
                     <div className="flex flex-wrap gap-2 mb-6">
@@ -131,7 +131,7 @@ const ProjectsSection = () => {
                       {/* Botón VER MÁS (Abre el Modal) */}
                       <button 
                         onClick={() => setSelectedProject(project)}
-                        className="flex-1 flex items-center justify-center gap-2 bg-slate-700 hover:bg-slate-600 text-white py-2 rounded-lg transition-colors text-sm font-medium"
+                        className="flex-1 flex items-center justify-center gap-2 bg-slate-200 hover:bg-slate-300 dark:bg-slate-700 dark:hover:bg-slate-600 text-slate-900 dark:text-white py-2 rounded-lg transition-colors text-sm font-medium"
                       >
                           Ver más
                       </button>
@@ -141,7 +141,7 @@ const ProjectsSection = () => {
                         href={project.github} 
                         target="_blank" 
                         rel="noopener noreferrer" 
-                        className="flex-1 flex items-center justify-center gap-2 bg-slate-800 hover:bg-slate-700 text-white py-2 rounded-lg transition-colors text-sm font-medium border border-slate-700"
+                        className="flex-1 flex items-center justify-center gap-2 bg-slate-100 hover:bg-slate-200 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-900 dark:text-white py-2 rounded-lg transition-colors text-sm font-medium border border-slate-200 dark:border-slate-700"
                       >
                           <Github size={16} /> Código
                       </a>
@@ -163,12 +163,12 @@ const ProjectsSection = () => {
           ></div>
 
           {/* Contenido del Modal */}
-          <div className="relative bg-slate-900 border border-slate-700 rounded-2xl w-full max-w-2xl max-h-[90vh] overflow-y-auto shadow-2xl animate-in fade-in zoom-in duration-300">
+          <div className="relative bg-white dark:bg-slate-900 border border-slate-200 dark:border-slate-700 rounded-2xl w-full max-w-2xl max-h-[90vh] overflow-y-auto shadow-2xl animate-in fade-in zoom-in duration-300">
             
             {/* Botón cerrar */}
             <button 
               onClick={() => setSelectedProject(null)}
-              className="absolute top-4 right-4 p-2 bg-slate-800 rounded-full text-slate-400 hover:text-white hover:bg-red-500/20 hover:text-red-400 transition-all z-10"
+              className="absolute top-4 right-4 p-2 bg-slate-100 dark:bg-slate-800 rounded-full text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:hover:text-white hover:bg-red-500/20 hover:text-red-400 transition-all z-10"
             >
               <X size={20} />
             </button>
@@ -180,26 +180,26 @@ const ProjectsSection = () => {
                ) : (
                   <div className={`w-full h-full ${selectedProject.imagePlaceholder}`}></div>
                )}
-               <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-slate-900 to-transparent h-24"></div>
+               <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-white dark:from-slate-900 to-transparent h-24"></div>
             </div>
 
             <div className="p-8 -mt-6 relative">
-              <h3 className="text-3xl font-bold text-white mb-2">{selectedProject.title}</h3>
-              <span className="text-primary-400 text-sm font-semibold tracking-wider uppercase mb-6 block">
+              <h3 className="text-3xl font-bold text-slate-900 dark:text-white mb-2">{selectedProject.title}</h3>
+              <span className="text-primary-600 dark:text-primary-400 text-sm font-semibold tracking-wider uppercase mb-6 block">
                 {selectedProject.category}
               </span>
 
-              <p className="text-slate-300 leading-relaxed mb-6">
+              <p className="text-slate-600 dark:text-slate-300 leading-relaxed mb-6">
                 {selectedProject.description}
               </p>
 
               <div className="mb-8">
-                <h4 className="text-white font-semibold mb-3 flex items-center gap-2">
+                <h4 className="text-slate-900 dark:text-white font-semibold mb-3 flex items-center gap-2">
                   <CheckCircle2 size={18} className="text-primary-500" /> Funcionalidades clave:
                 </h4>
                 <ul className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   {selectedProject.features.map((feature, i) => (
-                    <li key={i} className="text-slate-400 text-sm flex items-start gap-2">
+                    <li key={i} className="text-slate-600 dark:text-slate-400 text-sm flex items-start gap-2">
                       <span className="w-1.5 h-1.5 rounded-full bg-primary-500 mt-1.5 shrink-0"></span>
                       {feature}
                     </li>
@@ -215,7 +215,7 @@ const ProjectsSection = () => {
                 ))}
               </div>
 
-              <div className="flex gap-4 border-t border-slate-800 pt-6">
+              <div className="flex gap-4 border-t border-slate-200 dark:border-slate-800 pt-6">
                  <a 
                     href={selectedProject.github}
                     target="_blank"
@@ -226,7 +226,7 @@ const ProjectsSection = () => {
                  </a>
                  <button 
                     onClick={() => setSelectedProject(null)}
-                    className="px-6 py-3 bg-slate-800 hover:bg-slate-700 text-slate-300 rounded-lg font-medium transition-colors"
+                    className="px-6 py-3 bg-slate-200 hover:bg-slate-300 dark:bg-slate-800 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-300 rounded-lg font-medium transition-colors"
                  >
                     Cerrar
                  </button>
