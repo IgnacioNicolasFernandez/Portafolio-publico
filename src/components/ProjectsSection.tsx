@@ -180,7 +180,7 @@ const ProjectsSection = () => {
                ) : (
                   <div className={`w-full h-full ${selectedProject.imagePlaceholder}`}></div>
                )}
-               <div className="absolute bottom-0 inset-x-0 bg-gradient-to-t from-white dark:from-slate-900 to-transparent h-24"></div>
+               <div className="absolute bottom-0 inset-x-0 from-white dark:from-slate-900 to-transparent h-24"></div>
             </div>
 
             <div className="p-8 -mt-6 relative">
