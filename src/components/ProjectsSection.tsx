@@ -1,6 +1,7 @@
+
 import { Github, ExternalLink, Layers } from 'lucide-react';
 
-const Projects = () => {
+const ProjectsSection = () => {
   const projects = [
     {
       title: "Sistema de Gestión Web & Dashboard",
@@ -63,4 +64,4 @@ const Projects = () => {
   );
 };
 
-export default Projects;
+export default ProjectsSection;
