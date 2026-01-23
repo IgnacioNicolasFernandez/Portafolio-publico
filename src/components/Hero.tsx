@@ -28,7 +28,7 @@ const Hero = () => {
             <a href="#projects" className="bg-primary-500 hover:bg-primary-600 text-white px-8 py-3 rounded-lg font-medium flex items-center gap-2 transition-all shadow-lg shadow-primary-500/20">
               Ver Proyectos <ArrowRight size={20} />
             </a>
-            <a href="/cv-ignacio.pdf" download className="border border-slate-600 hover:border-slate-400 text-slate-300 hover:text-white px-8 py-3 rounded-lg font-medium flex items-center gap-2 transition-all">
+            <a href="/Ignacio Nicolás Fernandez.pdf" download className="border border-slate-600 hover:border-slate-400 text-slate-300 hover:text-white px-8 py-3 rounded-lg font-medium flex items-center gap-2 transition-all">
               Descargar CV <Download size={20} />
             </a>
           </div>
