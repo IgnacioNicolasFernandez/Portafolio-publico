@@ -25,12 +25,12 @@ const Hero = () => {
             Transformando lógica compleja en experiencias web fluidas. Especializado en React, Node.js y Metodologías Ágiles.
           </p>
           
-          <div className="flex flex-col sm:flex-row justify-center lg:justify-start gap-6">
-            <a href="#projects" className="bg-primary-600 hover:bg-primary-700 dark:bg-primary-500 dark:hover:bg-primary-600 text-white px-8 py-4 rounded-xl font-medium flex items-center justify-center gap-2 transition-all shadow-lg shadow-primary-500/20 text-lg">
-              Ver Proyectos <ArrowRight size={20} />
+          <div className="w-full flex flex-col sm:flex-row justify-center lg:justify-start gap-4 md:gap-6 mt-8">
+            <a href="#projects" className="w-full sm:w-auto bg-primary-600 hover:bg-primary-700 dark:bg-primary-500 dark:hover:bg-primary-600 text-white px-8 py-5 rounded-xl font-bold flex items-center justify-center gap-2 transition-all shadow-lg shadow-primary-500/20 text-xl md:text-lg">
+              Ver Proyectos <ArrowRight size={22} />
             </a>
-            <a href="/Ignacio Nicolás Fernandez.pdf" download className="border border-slate-300 dark:border-slate-600 hover:border-slate-400 text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white px-8 py-4 rounded-xl font-medium flex items-center justify-center gap-2 transition-all text-lg">
-              Descargar CV <Download size={20} />
+            <a href="/Ignacio Nicolás Fernandez.pdf" download className="w-full sm:w-auto border-2 border-slate-300 dark:border-slate-600 hover:border-slate-400 text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white px-8 py-5 rounded-xl font-bold flex items-center justify-center gap-2 transition-all text-xl md:text-lg">
+              Descargar CV <Download size={22} />
             </a>
           </div>
         </motion.div>
@@ -44,8 +44,8 @@ const Hero = () => {
         >
            <div className="relative">
              <div className="absolute inset-0 bg-gradient-to-tr from-primary-500/20 to-purple-500/20 rounded-full blur-3xl" />
-             <div className="relative bg-white dark:bg-slate-800/50 p-2 rounded-2xl border border-slate-200 dark:border-slate-700/50 backdrop-blur-sm shadow-xl dark:shadow-none transition-colors duration-300">
-               <div className="bg-slate-50 dark:bg-slate-900 rounded-xl p-4 lg:p-6 font-mono text-xs sm:text-sm text-slate-600 dark:text-slate-300 shadow-inner">
+            <div className="relative bg-white dark:bg-slate-800/50 p-3 sm:p-2 rounded-3xl border border-slate-200 dark:border-slate-700/50 backdrop-blur-sm shadow-xl dark:shadow-none transition-colors duration-300">
+             <div className="bg-slate-50 dark:bg-slate-900 rounded-2xl p-6 lg:p-6 font-mono text-sm sm:text-sm text-slate-600 dark:text-slate-300 shadow-inner overflow-x-auto">
                  <div className="flex gap-2 mb-4">
                    <div className="w-2.5 h-2.5 lg:w-3 lg:h-3 rounded-full bg-red-500" />
                    <div className="w-2.5 h-2.5 lg:w-3 lg:h-3 rounded-full bg-yellow-500" />

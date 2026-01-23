@@ -56,7 +56,7 @@ const Navbar = () => {
               alt="Logo Ignacio Dev" 
               className="h-10 w-10" 
             />
-            <span className="text-xl font-bold text-slate-900 dark:text-white transition-colors">
+            <span className="text-3xl md:text-xl font-bold text-slate-900 dark:text-white transition-colors">
               Ignacio.dev
             </span>
           </div>
@@ -99,9 +99,10 @@ const Navbar = () => {
             {/* Botón Hamburguesa */}
             <button
               onClick={() => setIsOpen(!isOpen)}
-              className="text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white p-2"
+              className="text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white p-3 md:p-2"
+              aria-label="Menu Principal"
             >
-              {isOpen ? <X size={24} /> : <Menu size={24} />}
+              {isOpen ? <X size={32} /> : <Menu size={32} />}
             </button>
           </div>
         </div>
@@ -110,13 +111,13 @@ const Navbar = () => {
       {/* Mobile Menu Dropdown */}
       {isOpen && (
         <div className="md:hidden bg-white dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800">
-          <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+          <div className="px-0 pt-0 pb-0 shadow-xl h-screen flex flex-col justify-center gap-6">
             {navLinks.map((link) => (
               <a
                 key={link.name}
                 href={link.href}
                 onClick={() => setIsOpen(false)}
-                className="text-slate-700 dark:text-slate-300 hover:text-primary-600 dark:hover:text-primary-400 block px-3 py-2 rounded-md text-base font-medium transition-colors"
+                className="text-slate-700 dark:text-slate-300 hover:text-primary-600 dark:hover:text-primary-400 block w-full text-center px-4 py-4 text-2xl font-bold transition-colors border-b border-slate-100 dark:border-slate-800 last:border-0"
               >
                 {link.name}
               </a>
