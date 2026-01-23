@@ -3,7 +3,6 @@ import { motion, useAnimation, useInView } from 'framer-motion';
 
 interface Props {
   children: ReactNode;
-  width?: "fit-content" | "100%";
 }
 
 export const RevealOnScroll = ({ children }: Props) => {

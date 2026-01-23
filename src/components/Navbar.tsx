@@ -36,11 +36,11 @@ const Navbar = () => {
   };
 
   const navLinks = [
-    { name: 'Inicio', href: '#home' }, // Asegúrate de poner id="home" en tu Hero si quieres que funcione este link específico, o déjalo para ir arriba
+    { name: 'Inicio', href: '#home' },
     { name: 'Sobre mí', href: '#about' },
     { name: 'Experiencia', href: '#experience' },
     { name: 'Proyectos', href: '#projects' },
-    { name: 'Habilidades', href: '#skills' }, // Cambié "Tecnologías" por "Habilidades" para coincidir con tu ID #skills
+    { name: 'Habilidades', href: '#skills' },
     { name: 'Contacto', href: '#contact' },
   ];
 

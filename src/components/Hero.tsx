@@ -3,7 +3,7 @@ import { ArrowRight, Download } from 'lucide-react';
 
 const Hero = () => {
   return (
-    <section id="home" className="min-h-[100dvh] w-full flex items-center justify-center pt-20 pb-10 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto transition-colors duration-300">
+    <section id="home" className="min-h-[100dvh] w-full flex items-center justify-center pt-32 pb-20 md:pt-20 md:pb-10 px-6 sm:px-6 lg:px-8 max-w-7xl mx-auto transition-colors duration-300">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center w-full">
         <motion.div
           initial={{ opacity: 0, x: -50 }}
@@ -11,26 +11,26 @@ const Hero = () => {
           transition={{ duration: 0.5 }}
           className="order-2 lg:order-1 flex flex-col items-center lg:items-start text-center lg:text-left"
         >
-          <span className="text-primary-600 dark:text-primary-400 font-semibold tracking-wider uppercase text-sm lg:text-base">Hola, soy</span>
-          <h1 className="text-4xl sm:text-5xl lg:text-7xl font-bold text-slate-900 dark:text-white mt-2 lg:mt-4 mb-4 lg:mb-6 leading-tight">
+          <span className="text-primary-600 dark:text-primary-400 font-semibold tracking-wider uppercase text-lg md:text-base">Hola, soy</span>
+          <h1 className="text-6xl md:text-7xl font-bold text-slate-900 dark:text-white mt-4 mb-8 leading-tight">
             Ignacio Nicolás <br />
             <span className="bg-gradient-to-r from-primary-600 to-blue-600 dark:from-primary-400 dark:to-blue-600 text-transparent bg-clip-text">
               Fernández
             </span>
           </h1>
-          <h2 className="text-xl lg:text-2xl text-slate-600 dark:text-slate-400 mb-6 font-medium">
+          <h2 className="text-2xl md:text-3xl text-slate-600 dark:text-slate-400 mb-8 font-medium">
             Desarrollador Full Stack | Técnico Superior
           </h2>
-          <p className="text-base lg:text-lg text-slate-700 dark:text-slate-300 mb-8 max-w-lg leading-relaxed">
+          <p className="text-xl md:text-lg text-slate-700 dark:text-slate-300 mb-10 max-w-lg leading-relaxed">
             Transformando lógica compleja en experiencias web fluidas. Especializado en React, Node.js y Metodologías Ágiles.
           </p>
           
-          <div className="flex flex-wrap justify-center lg:justify-start gap-4">
-            <a href="#projects" className="bg-primary-600 hover:bg-primary-700 dark:bg-primary-500 dark:hover:bg-primary-600 text-white px-6 py-3 lg:px-8 lg:py-3 rounded-lg font-medium flex items-center gap-2 transition-all shadow-lg shadow-primary-500/20 text-sm lg:text-base">
-              Ver Proyectos <ArrowRight size={18} />
+          <div className="flex flex-col sm:flex-row justify-center lg:justify-start gap-6">
+            <a href="#projects" className="bg-primary-600 hover:bg-primary-700 dark:bg-primary-500 dark:hover:bg-primary-600 text-white px-8 py-4 rounded-xl font-medium flex items-center justify-center gap-2 transition-all shadow-lg shadow-primary-500/20 text-lg">
+              Ver Proyectos <ArrowRight size={20} />
             </a>
-            <a href="/Ignacio Nicolás Fernandez.pdf" download className="border border-slate-300 dark:border-slate-600 hover:border-slate-400 text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white px-6 py-3 lg:px-8 lg:py-3 rounded-lg font-medium flex items-center gap-2 transition-all text-sm lg:text-base">
-              Descargar CV <Download size={18} />
+            <a href="/Ignacio Nicolás Fernandez.pdf" download className="border border-slate-300 dark:border-slate-600 hover:border-slate-400 text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:hover:text-white px-8 py-4 rounded-xl font-medium flex items-center justify-center gap-2 transition-all text-lg">
+              Descargar CV <Download size={20} />
             </a>
           </div>
         </motion.div>

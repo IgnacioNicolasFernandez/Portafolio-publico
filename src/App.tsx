@@ -12,7 +12,7 @@ function App() {
     <div className="bg-slate-50 dark:bg-slate-900 min-h-screen text-slate-900 dark:text-slate-200 selection:bg-primary-500 selection:text-white transition-colors duration-300">
       <Navbar />
       <main className="w-full">
-        <Hero /> {/* El Hero ya tiene su propia animación, no lo envolvemos */}
+        <Hero />
         
         <RevealOnScroll>
           <About />
