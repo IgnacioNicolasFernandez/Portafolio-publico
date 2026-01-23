@@ -41,7 +41,7 @@
 
 ## 📸 Captura de Pantalla
 
-> _Vista previa de la sección Hero y navegación en modo oscuro._
+<img src="./public/preview.png" alt="Screenshot del Portafolio" width="100%">
 
 ## 💡 Sobre el Proyecto
 
