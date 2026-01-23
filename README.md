@@ -32,7 +32,7 @@
     <li><a href="#-sobre-el-proyecto">Sobre el Proyecto</a></li>
     <li><a href="#-características-clave">Características Clave</a></li>
     <li><a href="#-tecnologías-utilizadas">Tecnologías</a></li>
-    <li><a href="#-instalación-y-uso">Instalación</a></li>
+    <li><a href="#-instalación-y-uso">Instalación y Uso</a></li>
     <li><a href="#-contacto">Contacto</a></li>
   </ol>
 </details>
@@ -127,6 +127,10 @@ public/
 📬 Contacto
 ¿Te interesa mi perfil o quieres colaborar en un proyecto?
 
-<div align="center"> <a href="https://www.google.com/search?q=https://mail.google.com/mail/%3Fview%3Dcm%26fs%3D1%26to%3Dinf26012004%40gmail.com" target="_blank"> <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail" /> </a> <a href="https://www.google.com/search?q=https://linkedin.com/in/TU_USUARIO" target="_blank"> <img src="https://www.google.com/search?q=https://img.shields.io/badge/LinkedIn-0077B5%3Fstyle%3Dfor-the-badge%26logo%3Dlinkedin%26logoColor%3Dwhite" alt="LinkedIn" /> </a> <a href="https://www.google.com/search?q=https://github.com/TU_USUARIO" target="_blank"> <img src="https://www.google.com/search?q=https://img.shields.io/badge/GitHub-100000%3Fstyle%3Dfor-the-badge%26logo%3Dgithub%26logoColor%3Dwhite" alt="GitHub" /> </a> </div>
+<div align="center"> <a href="https://www.google.com/search?q=https://mail.google.com/mail/%3Fview%3Dcm%26fs%3D1%26to%3Dinf26012004%40gmail.com" target="_blank"> <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail" /> </a>
+
+<a href="https://www.google.com/search?q=https://linkedin.com/in/TU_USUARIO" target="_blank"> <img src="https://www.google.com/search?q=https://img.shields.io/badge/LinkedIn-0077B5%3Fstyle%3Dfor-the-badge%26logo%3Dlinkedin%26logoColor%3Dwhite" alt="LinkedIn" /> </a>
+
+<a href="https://www.google.com/search?q=https://github.com/TU_USUARIO" target="_blank"> <img src="https://www.google.com/search?q=https://img.shields.io/badge/GitHub-100000%3Fstyle%3Dfor-the-badge%26logo%3Dgithub%26logoColor%3Dwhite" alt="GitHub" /> </a> </div>
 
 <div align="center"> <p>Desarrollado con ❤️ y ☕ por <strong>Ignacio Nicolás Fernández</strong></p> <p>© 2024 - Todos los derechos reservados.</p> </div>
