@@ -4,35 +4,24 @@ import About from './components/About';
 import Experience from './components/Experience';
 import ProjectsSection from './components/ProjectsSection';
 import Skills from './components/Skills';
-import Contact from './components/Contact';
-import { RevealOnScroll } from './components/RevealOnScroll'; 
+import Contact from './components/Contact'; 
 
 function App() {
   return (
-    <div className="bg-slate-50 dark:bg-slate-900 min-h-screen text-slate-900 dark:text-slate-200 selection:bg-primary-500 selection:text-white transition-colors duration-300 overflow-x-hidden">
+    <div className="bg-slate-50 dark:bg-slate-900 min-h-screen text-slate-900 dark:text-slate-200 selection:bg-primary-500 selection:text-white transition-colors duration-300">
       <Navbar />
       <main className="w-full">
         <Hero />
         
-        <RevealOnScroll>
-          <About />
-        </RevealOnScroll>
+        <About />
 
-        <RevealOnScroll>
-          <Experience />
-        </RevealOnScroll>
+        <Experience />
 
-        <RevealOnScroll>
-          <ProjectsSection />
-        </RevealOnScroll>
+        <ProjectsSection />
 
-        <RevealOnScroll>
-          <Skills />
-        </RevealOnScroll>
+        <Skills />
 
-        <RevealOnScroll>
-          <Contact />
-        </RevealOnScroll>
+        <Contact />
       </main>
     </div>
   );

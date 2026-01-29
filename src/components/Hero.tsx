@@ -1,16 +1,11 @@
-import { motion } from 'framer-motion';
+
 import { ArrowRight, Download } from 'lucide-react';
 
 const Hero = () => {
   return (
     <section id="home" className="min-h-[100dvh] w-full flex items-center justify-center pt-32 pb-20 md:pt-20 md:pb-10 px-6 sm:px-6 lg:px-8 max-w-7xl mx-auto transition-colors duration-300">
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-center w-full">
-        <motion.div
-          initial={{ opacity: 0, x: -50 }}
-          animate={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.5 }}
-          className="order-2 lg:order-1 flex flex-col items-center lg:items-start text-center lg:text-left"
-        >
+        <div className="order-2 lg:order-1 flex flex-col items-center lg:items-start text-center lg:text-left">
           <span className="text-primary-600 dark:text-primary-400 font-semibold tracking-wider uppercase text-lg md:text-base">Hola, soy</span>
           <h1 className="text-5xl md:text-7xl font-bold text-slate-900 dark:text-white mt-4 mb-8 leading-tight">
             Ignacio Nicolás <br />
@@ -33,15 +28,10 @@ const Hero = () => {
               Descargar CV <Download size={22} />
             </a>
           </div>
-        </motion.div>
+        </div>
 
         {/* Decoración Visual de Código */}
-        <motion.div 
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 0.5, delay: 0.2 }}
-          className="order-1 lg:order-2 w-full max-w-md mx-auto"
-        >
+        <div className="order-1 lg:order-2 w-full max-w-md mx-auto">
            <div className="relative">
              <div className="absolute inset-0 bg-gradient-to-tr from-primary-500/20 to-purple-500/20 rounded-full blur-3xl" />
             <div className="relative bg-white dark:bg-slate-800/50 p-3 sm:p-2 rounded-3xl border border-slate-200 dark:border-slate-700/50 backdrop-blur-sm shadow-xl dark:shadow-none transition-colors duration-300">
@@ -60,7 +50,7 @@ const Hero = () => {
                </div>
              </div>
            </div>
-        </motion.div>
+        </div>
       </div>
     </section>
   );
