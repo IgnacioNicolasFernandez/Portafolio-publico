@@ -2,9 +2,9 @@ import { Cpu } from 'lucide-react';
 
 const Skills = () => {
   const skills = {
-    Frontend: ["React", "Tailwind CSS", "HTML5", "CSS3", "JavaScript", "TypeScript", "Next.js", "Vite", "Vue3"],
-    Backend: ["Node.js", "Express", "SQL", "C# / .NET Concepts"],
-    Herramientas: ["Git & GitHub","SourceTree", "Vercel", "Scrum", "Jira", "VS Code", "Figma", "Canva"]
+    Frontend: ["React", "Framer Motion", "Tailwind CSS", "HTML5", "CSS3", "JavaScript", "TypeScript", "Next.js", "Vite", "Vue.js"],
+    Backend: ["Node.js", "Express", "Java", "Spring Boot", "SQL", "MySQL", "C# / .NET Concepts"],
+    Herramientas: ["Git & GitHub", "SourceTree", "Vercel", "Scrum", "Jira", "VS Code", "Figma", "Canva"]
   };
 
   return (
